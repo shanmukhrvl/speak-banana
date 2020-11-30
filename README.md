@@ -1,2 +1,2 @@
-# speak-banana
+# banana-speak
  A translation app to convert english to the languages of minions. 
