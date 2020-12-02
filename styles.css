@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -6,14 +8,36 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    text-align: center;
+:root {
+    --cool-gray: #374151;
+    --primary-color: #FACC15;
+    --cool-white: #F4F4F5;
+    --white-smoke: #F5F5F5;
 }
 
-main {
+h1 {
+    text-align: center;
+    background: var(--cool-gray);
+    color: var(--cool-white);
+    border-bottom: 0.5rem solid var(--primary-color);
+    padding: 1rem;
+}
+
+body {
+    background: var(--white-smoke);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
     margin: auto;
     padding: 1rem;
     max-width: 600px;
+}
+
+.hero-img {
+    max-width: 250px;
+    margin: auto;
+    display: block;
 }
 
 textarea {
@@ -26,35 +50,44 @@ textarea {
 button {
     margin: 1rem 0;
     padding: 0.5rem;
-    border-radius: 0.5rem;    
+    border-radius: 0.5rem;
+    color: var(--cool-white);
+    background: var(--cool-gray);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #output {
     display: block;
     width: 100%;
     min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
     padding: 1rem;
     border: 1px solid;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     padding: 1rem;
+    text-align: center;
+    color: var(--cool-white);
+    background: var(--cool-gray);
+    border-top: 0.5rem solid var(--primary-color);
 }
 
 footer div {
-    text-align: center;
+
 }
 
 footer p {
-    text-align: center;
     max-width: 600px;
     margin: auto;
     padding-top: 0.5rem;
 }
 
-footer p a {
-    color: black;
+footer  a {
+    color: var(--primary-color);
 }
