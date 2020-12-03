@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --cool-gray: #374151;
+    --primary-color: #FACC15;
+    --cool-white: #F4F4F5;
+    --white-smoke: #F5F5F5;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -8,12 +15,11 @@ html {
     box-sizing: inherit;
 }
 
-:root {
-    --cool-gray: #374151;
-    --primary-color: #FACC15;
-    --cool-white: #F4F4F5;
-    --white-smoke: #F5F5F5;
+body {
+    background: var(--white-smoke);
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 h1 {
     text-align: center;
@@ -21,11 +27,6 @@ h1 {
     color: var(--cool-white);
     border-bottom: 0.5rem solid var(--primary-color);
     padding: 1rem;
-}
-
-body {
-    background: var(--white-smoke);
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
